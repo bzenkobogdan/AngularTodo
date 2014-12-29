@@ -24,7 +24,7 @@
         <button class="control-button-style" ng-click="removeAllFriend()">remove all</button>
     </div>
     <ul class="friends-list">
-        <li ng-click="selected(friend)" ng-class="{selected: friend.selected}" ng-repeat="friend in friends | filter: searchVariant: searchArg">
+        <li ng-click="selected(friend)" ng-class="{selected: friend.selected}" ng-repeat="friend in friends | filter: {searchVariant: searchArg}">
             <span class="strong-name">{{friend.name}}</span>  <span class="strong-group">({{friend.groups}})</span>
         </li>
     </ul>
